@@ -34,3 +34,4 @@ o directamente git add 'nombredearchivo.txt'
 6) git commit -m "mensaje"
 registra los cambios en el repositorio LOCAL.
 es el primer snapshot del código acompañado de un mensaje log que describe esos cambioss
+
