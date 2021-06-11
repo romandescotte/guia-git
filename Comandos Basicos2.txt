@@ -1,0 +1,17 @@
+7) Luego del commit los archivos pasan al repositorio local.
+
+8) git add "Comandos Basicos2.txt"
+
+9) git commit -m "agrega Comandos Basicos2.txt"
+
+10) git log --oneline
+arroja el historial de commits en una linea.
+
+11) git reset --hard [commitID] 
+vuelve el codigo al commit especificado. se puede volver hacia adelante nuevamente siempre especificando el commitID.
+
+12) creamos un repositorio en github.com
+
+13) usando el nombre del repo: git remote add origin https://github.com/sk8mumy/nombredelrepo
+
+14) git push -u origin master
