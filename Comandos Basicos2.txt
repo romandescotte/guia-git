@@ -14,16 +14,9 @@ vuelve el codigo al commit especificado. se puede volver hacia adelante nuevamen
 
 13) usando el nombre del repo: git remote add origin https://github.com/sk8mumy/guia-git
 
-14) ERROR (pasar al proximo item): git push -u origin master.
-no se que paso aca pero se creo una rama master ademas de la main de github. no pude unirlas haciendo merge porque me decia algo asi como "refusing to merge unrelated histories" posible solucion: https://careerkarma.com/blog/git-fatal-refusing-to-merge-unrelated-histories/
+14) git branch -M main
 
-15) git branch -M main
+cambia el nombre de la rama "master" a "main". -M es igual a --move --force: segun documentacion permite renombrar la rama aunque exista previamente (file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-branch.html).
 
-crea la rama main. 
-
--M es igual a --move --force:
-segun documentacion permite renombrar la rama aunque exista previamente 
-(file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-branch.html)
-
-16) git push -u origin main
+15) git push -u origin main
 solicita credenciales y empuja los commits hacia el repositorio remoto
