@@ -1,0 +1,101 @@
+Estados de git:
+
+Working Directory/working tree (LOCAL)  --> Index/Staging Area/Current directory cache/Staged files/Caché (LOCAL) --> Repository (LOCAL) --> 
+Remote
+        
+(source: https://ndpsoftware.com/git-cheatsheet.html#loc=index;)
+
+// Comandos básicos:
+
+// Para abrir la pagina con el manual
+git help <command>
+git help
+git help -a
+git help -g
+
+// inicia el repo local (working directory) en la carpeta en la que se ejecute
+// crea la carpeta oculta .git
+// se ejecuta una vez por proyecto
+// en VS Code se pintan los archivos de color verde (aparece una U de untracked)
+git init
+
+// muestra el estado del working directory, con -s ó --short:
+// nos indica en una línea el estado de los archivos
+// aparecen con el símbolo ?? los archivos sin trackear. los archivos agregados aparecen con una "A" verde (added).
+// los que fueron añadidos Y modificados aparecen con "AM".
+// hasta ahora los archivos estan en el working directory
+git status
+git status -s || --short
+
+
+// agrega el archivo sin trackear al Index/Staging Area
+git add <file>
+
+// agrega todos los archivos sin trackear
+git add .
+
+// Si hacemos modificaciones al archivo mientras está en el staging area
+// aparece una linea amarilla en VS Code (modificado) o una linea cyan (nuevo) y una 'M' a la izquierda del nombre del archivo.
+// para comprobar los cambios en git ejecutar:
+git status -u (untracked)
+git status -v -v (verbose) //muestra las lineas modificadas que no estan añadidas al index (en rojo y verde).
+
+
+// Para actualizar esos cambios ejecutar: 
+//update 
+git add -u 
+
+
+// o directamente 
+git add 'nombredearchivo.txt'
+
+
+// agrega los archivos al repo LOCAL, abre el editor VIM.
+git commit
+
+// agrega los archivos al repo LOCAL sin abrir el editor VIM
+// es el primer snapshot del codigo acompañado de un mensaje log que describe esos cambios
+git commit -m "titulo del commit"
+
+// En el editor vim para poder tipear hay que presionar "i", luego "Esc" para dejar de editar y ":wq" y "Enter" para escribir los cambios y salir.
+
+// arroja el historial de commits en una linea.
+git log --oneline
+
+//vuelve el codigo al commit especificado. se puede volver hacia adelante nuevamente siempre especificando el commitID.
+git reset --hard [commitID] 
+
+// Creamos un repo remoto desde GitHub y luego...
+// Primer comando para agregar el linkeo al repo remoto.
+// origin es el alias de la URL
+git remote add origin https://github.com/sk8mumy/NOMBRE-DEL-REPO.git 
+
+// cambia el nombre de la rama a main (-M es igual a --move --force: segun documentacion permite renombrar la 
+//rama aunque exista previamente file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-branch.html.
+git branch -M main
+
+// -u es lo mismo que --set-upstream, "For every branch that is up to date or successfully pushed, add upstream (tracking) reference,"
+git push -u origin main
+
+
+
+
+
+
+git pull : para traerte los cambios desde el servidor
+git clone : clona el repositorio del servidor al disco duro
+git log: muestra el registro de commits hechos
+
+
+git add . : agrega todo el contenido de la carpeta
+
+
+--------------------------------------------------------
+
+
+git pull --rebase ???
+
+
+
+git ls-files -> lista los archivos comiteados
+git rm --cached "nombre de archivo" untrackea ese archivo
