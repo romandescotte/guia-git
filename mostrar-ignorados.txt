@@ -1,0 +1,5 @@
+source: https://scriptcrunch.com/git-show-ignored-files/
+
+//para chequear si los archivos son activamente ignorados
+//navegar hasta la carpeta y tipear.
+git check-ignore *

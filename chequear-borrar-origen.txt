@@ -1,0 +1,10 @@
+source: https://scriptcrunch.com/git-show-ignored-files/
+
+// borra el origen remoto
+git remote rm origin
+
+//muestra origenes
+git remote -v
+
+//muestra informacion acerca de ese origen
+git remote show alias
