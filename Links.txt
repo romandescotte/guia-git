@@ -1,0 +1,17 @@
+Git Reference:
+https://git-scm.com/docs
+
+Git Interactive Cheatsheet (NDP)
+https://ndpsoftware.com/git-cheatsheet.html
+
+Git Book:
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+
+GitHub Training Cheatsheet:
+https://training.github.com/downloads/es_ES/github-git-cheat-sheet/
+
+GitHub Submodule:
+https://training.github.com/downloads/es_ES/submodule-vs-subtree-cheat-sheet/
+
+Apuntes mitad español mitad ingles:
+https://www.notion.so/Apuntes-Git-582cacbf38dc4f07bedf52f74c1ec87b
