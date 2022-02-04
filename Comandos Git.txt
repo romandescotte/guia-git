@@ -1,0 +1,67 @@
+Comandos básicos
+
+Estados:
+
+Working Directory/working tree
+      |
+      ˅
+Index/Staging Area
+      |
+      ˅
+ Repository
+
+
+// Para abrir la pagina con el manual
+git help <command>
+git help
+git help -a
+git help -g
+
+// inicia el repo local (working directory) en la carpeta en la que se ejecute.
+git init
+
+// agrega el archivo sin trackear al Index/Staging Area
+git add <file>
+
+// agrega todos los archivos sin trackear
+git add .
+
+// muestra el estado del working directory
+git status
+
+// agrega los archivos al repo local, abre el editor VIM.
+git commit
+
+// agrega los archivos al repo local sin abrir el editor VIM
+git commit -m "titulo del commit"
+
+// Creamos un repo remoto desde GitHub y luego...
+//Primer comando para agregar el linkeo al repo remoto.
+// origin es el alias de la URL
+git remote add origin https://github.com/sk8mumy/js-challenges.git 
+
+// cambia el nombre de la rama a main (-M es igual a --move --force: segun documentacion permite renombrar la 
+//rama aunque exista previamente file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-branch.html.
+git branch -M main
+
+// -u es lo mismo que --set-upstream, "For every branch that is up to date or successfully pushed, add upstream (tracking) reference,"
+git push -u origin main
+
+
+git pull : para traerte los cambios desde el servidor
+git clone : clona el repositorio del servidor al disco duro
+git log: muestra el registro de commits hechos
+
+
+git add . : agrega todo el contenido de la carpeta
+
+
+--------------------------------------------------------
+
+
+git pull --rebase ???
+
+
+
+git ls-files -> lista los archivos comiteados
+git rm --cached "nombre de archivo" untrackea ese archivo

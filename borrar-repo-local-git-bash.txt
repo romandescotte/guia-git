@@ -1,0 +1,12 @@
+To piggyback on rkj's answer, to avoid endless prompts (and force the command recursively), enter the following into the command line, within the project folder:
+
+$ rm -rf .git
+Or to delete .gitignore and .gitmodules if any (via @aragaer):
+
+$ rm -rf .git*
+Then from the same ex-repository folder, to see if hidden folder .git is still there:
+
+$ ls -lah
+If it's not, then congratulations, you've deleted your local git repo, but not a remote one if you had it. You can delete GitHub repo on their site (github.com).
+
+Source: https://stackoverflow.com/questions/1514054/how-do-i-delete-a-local-repository-in-git/1514088#1514088
