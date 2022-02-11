@@ -57,6 +57,9 @@ git commit
 // es el primer snapshot del codigo acompañado de un mensaje log que describe esos cambios
 git commit -m "titulo del commit"
 
+//agrega al staging (los archivos presentes en el ultimo commit) y commitea al mismo tiempo
+git commit -am "titulo del commit"
+
 // En el editor vim para poder tipear hay que presionar "i", luego "Esc" para dejar de editar y ":wq" y "Enter" para escribir los cambios y salir.
 
 // arroja el historial de commits en una linea.
