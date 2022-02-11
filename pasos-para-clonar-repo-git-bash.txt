@@ -1,3 +1,8 @@
+// Lo mejor es forkearlo primero en GitHub y luego clonar el repo con el link del fork. (aparece "forked from..." en nuestro repo y te ahorras el paso de setear el origin).
+
+----------
+
+
 //Estos son los pasos para forkear un repo, lo mismo que en clase-9-resumen (r/argentina-programa), solo que con Git //Bash. 
 
 ~/backup 2021/back up laburo 2020/roman/Javascript/Argentina Programa
