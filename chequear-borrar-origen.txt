@@ -8,3 +8,7 @@ git remote -v
 
 //muestra informacion acerca de ese origen
 git remote show alias
+
+//agregar fuente remota
+git remote add origin https://github.com/...
+
