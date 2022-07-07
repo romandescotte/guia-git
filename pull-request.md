@@ -1,3 +1,7 @@
+## Pull request
+
+<br>
+
 El pull request es un pedido de mergear dos ramas. Puede ser con la rama main/master u otra.
 
 Se crea una rama, se comitean los cambios, se pushea a la nueva rama, se crea el pull request.
@@ -17,27 +21,28 @@ Merge commit: crea un commit de tipo merge que agrupa todos los commits del PR.
 
 Squash and merge: combina los commits en uno solo y lo pone en la nueva rama.
 
-Rebase and merge: se ponen los commits por separado, en orden, arriba del ultimo commit.  
+Rebase and merge: se ponen los commits por separado, en orden, arriba del ultimo commit.  <br><br>
 
 --------
+<br><br>
 
-GitHub CLI:
+## GitHub CLI:<br><br>
 
-gh pr list: lista los PR abiertos
+`gh pr list`: lista los PR abiertos<br><br>
 
-gh pr list -s "all" | "closed": lista todos los PR con ese estado (--state).
+`gh pr list -s "all" | "closed"`: lista todos los PR con ese estado (--state).<br><br>
 
-gh pr list --assignee "userName"
+`gh pr list --assignee "userName"`<br><br>
 
-hr pr status
+`gh pr status`<br><br>
 
-gh pr list --label "bug"
+`gh pr list --label "bug"`<br><br>
 
-gh pr view "14": abre el PR en el browser 
+`gh pr view "14": abre el PR en el browser` <br><br>
 
-git checkout -b "nuevaRama"
+`git checkout -b "nuevaRama"`<br><br>
 
-gh pr create -t "Sample Title" -b "Sample Body": crea el PR en la rama actual
+`gh pr create -t "Sample Title" -b "Sample Body": crea el PR en la rama actual`<br><br>
 
 
 
