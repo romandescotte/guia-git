@@ -1,12 +1,12 @@
+## Untrack 
+
 Si me confundi y lo pushee:
 
-`git rm --cached archivo-sensible.txt`
+`git rm --cached archivo-sensible.txt`: borra el archivo del caché (osea del stage). O lo que es lo mismo lo untrackea.
 
-Agrego archivo-sensible.txt al .gitignore
+`git add .gitignore`: Agrego archivo-sensible.txt al .gitignore
 
-`git add .gitignore`
+`git commit -m "agrega archivo-sensible.txt al .gitignore"`: comitea el cambio del archivo agregado al .gitignore
 
-`git commit -m "agrega archivo-sensible.txt al .gitignore"`
-`git push`
+`git push`: pushear el commit del .gitignore . Agrego archivo-sensible.txt al .gitignore
 
-Ahora no figura mas en el repo remoto.

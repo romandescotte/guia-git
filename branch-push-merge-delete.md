@@ -48,6 +48,9 @@ Si nos fijamos en GitHub, sigue figurando la rama nuevaRama2. Para borrarla se p
 
 `git push origin :nuevaRama2`
 
+## Comandos varios
+
+`git clone -b <branch-name> <repo-url>` : clona una rama específica desde un repositorio remoto. 
 
 
 
