@@ -1,4 +1,4 @@
-# Diff
+# Diff - Log - Ver - Mostrar
 
 ---
 
@@ -8,4 +8,19 @@
 
 `git diff <commit>`: muestra los cambios de tu index/working tree (no stageado/no cacheado) con un commit. Se puede usar HEAD para comprarlos con el ultimo commit o un nombre de rama para compararlo con la punta de esa rama (último commit de esa rama)..
 
+`git diff rama1 rama2`: muestra diferencias entre esas ramas.
 
+# Mostrar 
+
+---
+
+`git ls-tree --full-tree -r --name-only HEAD`: mostrar archivos comiteados siendo trackeados actualmente 
+
+`git check-ignore *`: desde la carpeta deseada chequear si los archivos son activamente ignorados.
+
+(source: https://scriptcrunch.com/git-show-ignored-files/)
+
+
+`git log --name-status HEAD^..HEAD`: Para ver que se comiteo en el ultimo <br><br>
+
+`git log -1`, `git show`, `git diff`: devuelven un resultaodo similar al comando de arriba.

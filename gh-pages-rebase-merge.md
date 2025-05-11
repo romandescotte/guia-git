@@ -1,3 +1,9 @@
+## Rebase explicado
+
+Desde la rama actual en la que estás parado te traés los cambios de la rama que especifiques como argumento en el comando. Ejemplo:
+
+Estando parado en master ejecuto: `git rebase arreglaBug`. Me trae a master los commits hechos en la rama arreglaBug.
+
 ## Rebase para gh-pages
 <br>
 
@@ -16,3 +22,6 @@
 `git push origin gh-pages`: commit the changes
 <br><br>
 `git checkout master `: return to the master branch
+
+
+

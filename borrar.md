@@ -1,7 +1,7 @@
 ## Borrar repo local (de 0)<br>
 <br>
 
-`rm -rf .git`: to avoid endless prompts (and force the command recursively)
+OJO ESTO BORRA SIN PASAR PO LA PAPELERA, DEFINITIVAMENTE !!! `rm -rf .git`: to avoid endless prompts (and force the command recursively)
 
 `rm -rf .git*` : to delete .gitignore and .gitmodules if any
 Then from the same ex-repository folder, to see if hidden folder .git is still there:
